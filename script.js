@@ -4,6 +4,10 @@ function appendToDisplay(value) {
 function clearDisplay() {
     document.getElementById("display").value = "";
 }
+function deleteLastChar() {
+    let display = document.getElementById("display");
+    display.value = display.value.slice(0, -1);
+}
 function calculateResult() {
     try {
         let expression = document.getElementById("display").value;
